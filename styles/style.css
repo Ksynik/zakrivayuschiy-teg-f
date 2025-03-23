@@ -207,12 +207,14 @@
 .save__dialog-icon {
   width: 21px;
   aspect-ratio: 1 / 1;
+  color: var(--contour-color);
 }
 .icon {
   width: 39px;
   height: 39px;
   flex-shrink: 0;
   align-self: center;
+  fill: var(--contour-color)
 }
 .dialog__message {
   display: flex;
