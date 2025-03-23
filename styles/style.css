@@ -67,7 +67,7 @@
 .post__title {
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
-  font-weight: 700;
+  font-variation-settings: 'wght' 700;
   padding: 6px 10px;
 }
 .post__content {
@@ -79,6 +79,7 @@
   font-size: 18px;
   line-height: 21px;
   margin-block-end: 27px;
+  font-variation-settings: 'wght' 400;
 }
 .post__card {
   position: relative;
@@ -214,7 +215,7 @@
   height: 39px;
   flex-shrink: 0;
   align-self: center;
-  fill: var(--contour-color)
+  fill: var(--contour-color);
 }
 .dialog__message {
   display: flex;
