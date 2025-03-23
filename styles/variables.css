@@ -1,1 +1,27 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+/* Шрифты */
+:root {
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P-Regular", sans-serif;
+  --font-wght: 400;
+  --size-font: 14px;
+}
+
+/* Цвета */
+:root {
+  --animation-fill-color: #ff0000;
+  --contour-color: #000;
+  --color-body-heart: none;
+  --font-color: #000;
+  --color: #ffffff;
+  --bg-color: #ffffff;
+  --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+/* Размеры */
+:root {
+  --font-size-accent: clamp(3.063rem, 1.502vw + 2.71rem, 4.063rem);
+}
+
+
