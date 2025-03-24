@@ -3,7 +3,7 @@
 /* Шрифты */
 :root {
   --main-font: "Inter-Variable", sans-serif;
-  --accent-font: "PressStart2P-Regular", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
   --font-wght: 400;
   --size-font: 14px;
   --animation-fill-color: #ff0000;

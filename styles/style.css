@@ -67,19 +67,19 @@
 .post__title {
   font-family: var(--main-font), sans-serif;
   font-size: 18px;
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: "wght" 700;
   padding: 6px 10px;
 }
 .post__content {
   padding: 25px;
 }
 .post__text {
-  font-family: var(--main-font), sans-serif;
+  font-family: "Inter-Variable", sans-serif;
   font-weight: var(--font-wght);
   font-size: 18px;
   line-height: 21px;
   margin-block-end: 27px;
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
 }
 .post__card {
   position: relative;
@@ -157,10 +157,13 @@
   outline: none;
 }
 .card__icon-button:focus-visible {
+  display: flex;
+  align-items: center;
   border: 2px solid var(--contour-color);
 }
 
 .like-icon {
+  display: flex;
   width: 36px;
   height: 39px;
   cursor: pointer;
@@ -170,9 +173,10 @@
   border: 2px solid var(--contour-color);
   width: 130px;
   height: 38px;
+  background-color: #ffffff;
 }
 .button__text {
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   position: relative;
   font-size: var(--size-font);
   line-height: 90%;
@@ -199,7 +203,6 @@
   gap: 8px;
 }
 .save__text {
-  margin-left: 8px;
   line-height: 150%;
 }
 .text {
@@ -223,41 +226,37 @@
   margin-block-end: 30px;
 }
 .dialog {
-  width: clamp(21.313rem, 1.127vw + 21.048rem, 22.063rem);
-  height: 191px;
+  max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   flex-direction: column;
   align-items: center;
-  font-family: "PressStart2P-Regular", sans-serif;
-  font-size: 14px;
-  line-height: 150%;
-  text-transform: uppercase;
   border: 2px solid var(--contour-color);
   background-color: var(--bg-color);
   margin-top: 384.5px;
-  overflow: hidden;
+  padding: 30px;
 }
+
 .dialog[open] {
   display: flex;
   position: fixed;
   inset: 0;
-  padding: 30px;
 }
+
+body:has(.dialog[open]) {
+  overflow: hidden;
+}
+
 .dialog[open]::backdrop {
   backdrop-filter: brightness(25%);
 }
 .close-button {
-  display: flex;
-  position: relative;
-  justify-content: center;
+  background-color: #fff;
   border: 2px solid var(--contour-color);
-  overflow: hidden;
-  background: var(--bg-color);
-  color: var(--contour-color);
-  cursor: pointer;
-  padding: 12.5px 132.5px;
+  inline-size: 100%;
+  height: 38px;
 }
 
 .button {
+  transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -311,10 +310,19 @@
       width: 28px;
       height: 28px;
   }
+  .icon {
+      width: 39px;
+      height: 39px;
+  }
+  .dialog {
+      padding: 30px 40px;
+      margin: 238px 17px;
+  }
   .dialog[open] {
       margin-top: 238px;
       margin-bottom: 238px;
   }
 }
+
 
 
