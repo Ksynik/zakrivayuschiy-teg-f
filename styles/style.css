@@ -170,6 +170,7 @@
 }
 
 .card__like-button {
+  transition: border-color 0.3s ease;
   border: 2px solid var(--contour-color);
   width: 130px;
   height: 38px;
@@ -229,10 +230,11 @@
   max-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid var(--contour-color);
   background-color: var(--bg-color);
-  margin-top: 384.5px;
   padding: 30px;
+  line-height: 150%;
 }
 
 .dialog[open] {
@@ -316,12 +318,8 @@ body:has(.dialog[open]) {
   }
   .dialog {
       padding: 30px 40px;
-      margin: 238px 17px;
   }
-  .dialog[open] {
-      margin-top: 238px;
-      margin-bottom: 238px;
-  }
+  
 }
 
 
